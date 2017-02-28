@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="horizontal_linearlayout">
+        <!--该样式用于水平布局-->
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="vertical_linearlayout">
+        <!--该样式用于垂直布局-->
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="relativelayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="splitter_view">
+        <!--该样式用于分割条-->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/devide_line</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="dot_splitter_view" parent="splitter_view">
+        <!--该样式用于分割条-->
+        <item name="android:background">@drawable/listview_devider</item>
+    </style>
+
+    <style name="title_text">
+        <!--该样式用于标题-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="title_center_text" parent="title_text">
+        <!--该样式用于居中标题-->
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="content_text">
+        <!--该样式用于内容文本-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="content_withimage_text" parent="content_text">
+        <!--该样式用于前面有image控件的内容文本-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+    <style name="commontext">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text_start_image">
+        <!--该样式用于文本前的图像-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:src">@drawable/text_start_image</item>
+    </style>
+    <style name="right_arrow_image">
+        <!--该样式用于向右箭头的图像-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/jiantou1</item>
+    </style>
+
+    <style name="dot_disable_image">
+        <!--灰化圆圈图像-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/dot_disable</item>
+    </style>
+    <style name="dot_enable_image">
+        <!--绿色圆圈图像-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/dot_enable</item>
+    </style>
+
+    <style name="center_icon_image">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+    </style>
+
+    <style name="prev_button">
+        <!--上一步-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:text">上一步</item>
+        <item name="android:drawableLeft">@drawable/prev</item>
+        <item name="android:onClick">prev</item>
+    </style>
+    <style name="next_button">
+        <!--下一步-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:text">下一步</item>
+        <item name="android:drawableRight">@drawable/next</item>
+        <item name="android:onClick">next</item>
+    </style>
+
+    <style name="right_checkbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="my_pb_style" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/my_pb_bg</item>
+    </style>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView style="@style/title_center_text"
+        android:text="程序锁"/>
+    <View style="@style/splitter_view"/>
+
+    <RelativeLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <LinearLayout
+            android:id="@+id/ll_applock_loading"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            <ProgressBar
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <TextView style="@style/content_text"
+                android:text="正在加载程序信息……"/>
+        </LinearLayout>
+        <ListView
+            android:fastScrollEnabled="true"
+            android:id="@+id/lv_applock"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView style="@style/title_center_text"
+        android:text="流量统计"/>
+    <View style="@style/splitter_view"/>
+
+    <SlidingDrawer
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <ImageView
+            android:id="@id/handle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/notification"/>
+        <RelativeLayout
+            android:id="@id/content"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/ll_loading"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <ProgressBar style="@style/my_pb_style"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+                <TextView style="@style/commontext"
+                    android:text="正在加载流量信息……"/>
+            </LinearLayout>
+            <ListView
+                android:id="@+id/lv_traffic"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+        </RelativeLayout>
+    </SlidingDrawer>
+</LinearLayout>

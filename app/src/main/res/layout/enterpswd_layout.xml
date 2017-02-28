@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent" >
+
+    <RelativeLayout style="@style/relativelayout">
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <TextView style="@style/content_text"
+            android:id="@+id/tv_name"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_icon"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_pswd"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+    <Button
+        android:id="@+id/bt_enter"
+        android:text="确定"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+</LinearLayout>

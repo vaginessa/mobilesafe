@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_popup_container"
+    android:orientation="horizontal"
+    android:background="@drawable/local_popup_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_popup_uninstall"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <ImageView
+            android:src="@drawable/img1"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <TextView style="@style/content_text"
+            android:text="卸载"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_popup_start"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <ImageView
+            android:src="@drawable/img2"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <TextView style="@style/content_text"
+            android:text="启动"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_popup_share"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <ImageView
+            android:src="@drawable/img3"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <TextView style="@style/content_text"
+            android:text="分享"/>
+    </LinearLayout>
+</LinearLayout>
